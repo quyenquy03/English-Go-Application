@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "English-Go-Application",
+    "slug": "English-Go-Application",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo-full-2.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/logo-full-2.png",
+      "resizeMode": "contain",
+      "imageWidth": 400,
+      "backgroundColor": "#fafafa"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo-full-2.png",
+        "backgroundColor": "#fafafa"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo-full-2.png",
+          "imageWidth": 400,
+          "resizeMode": "contain",
+          "backgroundColor": "#fafafa"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Merienda-Black.ttf",
+            "./assets/fonts/Merienda-Bold.ttf",
+            "./assets/fonts/Merienda-ExtraBold.ttf",
+            "./assets/fonts/Merienda-Light.ttf",
+            "./assets/fonts/Merienda-Medium.ttf",
+            "./assets/fonts/Merienda-Regular.ttf",
+            "./assets/fonts/Merienda-SemiBold.ttf"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

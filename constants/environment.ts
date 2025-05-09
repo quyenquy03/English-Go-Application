@@ -1,0 +1,12 @@
+const ENV = {
+  BACKEND_URL: process.env.EXPO_PUBLIC_BACKEND_URL || "",
+  CLOUD_NAME: process.env.EXPO_PUBLIC_CLOUD_NAME || "",
+  CLOUD_BASE_URL: process.env.EXPO_PUBLIC_CLOUD_BASE_URL || "",
+  CLOUD_API_KEY: process.env.EXPO_PUBLIC_CLOUD_API_KEY || "",
+  CLOUD_API_SECRET: process.env.EXPO_PUBLIC_CLOUD_API_SECRET || "",
+  CLOUDINARY_URL: process.env.EXPO_PUBLIC_CLOUDINARY_URL || "",
+  AUTH_SERVER_URL: process.env.EXPO_PUBLIC_AUTH_SERVER_URL || "",
+  AUTH_CLIENT_ID: process.env.EXPO_PUBLIC_CLIENT_ID || "",
+  REDIRECT_URL: process.env.EXPO_PUBLIC_REDIRECT_URL || "",
+};
+export default ENV;
