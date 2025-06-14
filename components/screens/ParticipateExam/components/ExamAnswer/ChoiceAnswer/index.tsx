@@ -7,7 +7,7 @@ const ChoiceAnswer = () => {
   return (
     <View style={ChoiceAnswerStyles.container}>
       {Array.from({ length: 10 }).map((_, index) => (
-        <ChoiceAnswerItem key={index} />
+        <ChoiceAnswerItem index={index + 1} key={index} />
       ))}
     </View>
   );

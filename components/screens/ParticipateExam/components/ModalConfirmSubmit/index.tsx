@@ -6,14 +6,24 @@ import ModalConfirmSubmitStyles from "./ModalConfirmSubmit.style";
 
 const ModalConfirmSubmit = () => {
   return (
-    <ModalCustom titleText='Xác nhận nạp kĩ năng' visible={true} setVisible={() => {}}>
+    <ModalCustom
+      titleText="Xác nhận nạp kĩ năng"
+      visible={false}
+      setVisible={() => {}}
+    >
       <View style={ModalConfirmSubmitStyles.container}>
         <View style={ModalConfirmSubmitStyles.imageBox}>
-          <Image source={IMAGES.banners.bannerPerson} style={ModalConfirmSubmitStyles.image} resizeMode='cover' />
+          <Image
+            source={IMAGES.banners.bannerPerson}
+            style={ModalConfirmSubmitStyles.image}
+            resizeMode="cover"
+          />
         </View>
         <View style={ModalConfirmSubmitStyles.contentBox}>
           <View style={ModalConfirmSubmitStyles.titleBox}>
-            <Text style={ModalConfirmSubmitStyles.title}>Bạn có chắc chắn {"\n"} muốn nạp bài không?</Text>
+            <Text style={ModalConfirmSubmitStyles.title}>
+              Bạn có chắc chắn {"\n"} muốn nạp bài không?
+            </Text>
           </View>
           <View style={ModalConfirmSubmitStyles.descriptionBox}>
             <Text style={ModalConfirmSubmitStyles.description}>

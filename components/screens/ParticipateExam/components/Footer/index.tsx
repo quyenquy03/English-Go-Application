@@ -9,13 +9,13 @@ const Footer = () => {
         <Text style={FooterStyles.buttonText}>Part 1</Text>
       </Pressable>
       <Pressable style={FooterStyles.button}>
-        <Text style={FooterStyles.buttonText}>Part 1</Text>
+        <Text style={FooterStyles.buttonText}>Part 2</Text>
       </Pressable>
       <Pressable style={FooterStyles.button}>
-        <Text style={FooterStyles.buttonText}>Part 1</Text>
+        <Text style={FooterStyles.buttonText}>Part 3</Text>
       </Pressable>
       <Pressable style={FooterStyles.button}>
-        <Text style={FooterStyles.buttonText}>Part 1</Text>
+        <Text style={FooterStyles.buttonText}>Part 4</Text>
       </Pressable>
     </View>
   );
