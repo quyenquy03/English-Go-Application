@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo-full-2.png",
         "backgroundColor": "#fafafa"
-      }
+      },
+      "permissions": ["RECORD_AUDIO", "INTERNET"]
     },
     "web": {
       "bundler": "metro",
@@ -51,6 +52,18 @@
             "./assets/fonts/Merienda-Regular.ttf",
             "./assets/fonts/Merienda-SemiBold.ttf"
           ]
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
         }
       ]
     ],

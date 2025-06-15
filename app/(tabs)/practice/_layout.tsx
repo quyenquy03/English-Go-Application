@@ -13,8 +13,8 @@ const ProfileLayout = () => {
             contentStyle: { flex: 1 },
           }}
         >
-          <Stack.Screen name='index' />
-          <Stack.Screen name='exam-room' />
+          <Stack.Screen name="index" />
+          <Stack.Screen name="exam-room" />
         </Stack>
       </View>
     </MainLayout>

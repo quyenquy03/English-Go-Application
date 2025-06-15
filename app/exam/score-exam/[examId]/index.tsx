@@ -1,12 +1,11 @@
+import ExamScore from "@/components/screens/ExamScore";
+import { useRoute } from "@react-navigation/native";
 import React from "react";
-import { Text, View } from "react-native";
 
 const ScoreExam = () => {
-  return (
-    <View>
-      <Text>ScoreExam</Text>
-    </View>
-  );
+  const route = useRoute();
+  const { examId } = route.params as { examId: string };
+  return <ExamScore examId={examId} />;
 };
 
 export default ScoreExam;

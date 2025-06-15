@@ -33,6 +33,7 @@ const WritingAnswer = () => {
         <TextInput
           placeholder="Enter your answer here!"
           multiline
+          disableFullscreenUI
           value={writingAnswer}
           onChangeText={setWritingAnswer}
           style={WritingAnswerStyles.textInput}

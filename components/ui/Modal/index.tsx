@@ -6,28 +6,50 @@ import { Pressable, Text, View } from "react-native";
 import ModalCustomStyles from "./Modal.style";
 interface ModalCustomProps {
   visible: boolean;
-  setVisible: (visible: boolean) => void;
+  onClose: () => void;
   children: React.ReactNode;
   titleText?: string;
+  onConfirm?: () => void;
+  onCancel?: () => void;
 }
 
-const ModalCustom = ({ visible, setVisible, children, titleText = "Modal Title" }: ModalCustomProps) => {
+const ModalCustom = ({
+  visible,
+  onClose,
+  children,
+  titleText = "Modal Title",
+  onCancel,
+  onConfirm,
+}: ModalCustomProps) => {
   return (
     <View style={ModalCustomStyles.container}>
-      <Modal visible={visible} backdropStyle={ModalCustomStyles.backdrop} onBackdropPress={() => setVisible(false)}>
+      <Modal
+        visible={visible}
+        backdropStyle={ModalCustomStyles.backdrop}
+        onBackdropPress={onClose}
+      >
         <View style={ModalCustomStyles.modalBox}>
           <View style={ModalCustomStyles.headerBox}>
             <Text style={ModalCustomStyles.headerTitle}>{titleText}</Text>
           </View>
-          <Pressable style={ModalCustomStyles.closeIcon} onPress={() => setVisible(false)}>
-            <FontAwesome name='close' size={18} color={COLORS.primary} />
+          <Pressable style={ModalCustomStyles.closeIcon} onPress={onClose}>
+            <FontAwesome name="close" size={18} color={COLORS.primary} />
           </Pressable>
           <View style={ModalCustomStyles.bodyBox}>{children}</View>
           <View style={ModalCustomStyles.footerBox}>
-            <Pressable style={[ModalCustomStyles.button, ModalCustomStyles.cancelButton]} onPress={() => setVisible(false)}>
+            <Pressable
+              style={[ModalCustomStyles.button, ModalCustomStyles.cancelButton]}
+              onPress={onCancel}
+            >
               <Text style={ModalCustomStyles.cancelButtonText}>Huỷ bỏ</Text>
             </Pressable>
-            <Pressable style={[ModalCustomStyles.button, ModalCustomStyles.confirmButton]} onPress={() => setVisible(false)}>
+            <Pressable
+              style={[
+                ModalCustomStyles.button,
+                ModalCustomStyles.confirmButton,
+              ]}
+              onPress={onConfirm}
+            >
               <Text style={ModalCustomStyles.confirmButtonText}>Xác nhận</Text>
             </Pressable>
           </View>

@@ -27,6 +27,8 @@ const HeaderStyles = StyleSheet.create({
   titleBox: {
     alignItems: "center",
     justifyContent: "center",
+    flexDirection: "row",
+    gap: 10,
   },
   title: {
     fontSize: 20,
@@ -34,6 +36,7 @@ const HeaderStyles = StyleSheet.create({
     fontFamily: FONTS.MERIENDA_BOLD,
     lineHeight: 30,
   },
+  iconBox: {},
   menuIcon: {
     width: 35,
     height: 35,
